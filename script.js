@@ -1,75 +1,48 @@
 function initMap() {
-	// Update MAP_ID with custom map ID
+	// Create the Google Maps Object
+	// Custom MAP_ID, change in index.html
 	map = new google.maps.Map(document.getElementById('map'), {
 		center: {
-			lat: 34.66767774804736,
-			lng: 135.43076145097373,
+			lat: 45.508888,
+			lng: -73.561668,
 		},
-		zoom: 18,
+		//specify zoom here 
+		zoom: 11,
+		// tilt: 40.5,	
 		mapId: 'MAP_ID',
 		mapTypeControl: false,
 		fullscreenControl: false,
 		streetViewControl: false,
 	});
 
+
+	// Adding custom map markers! 
 	// Name
 	// Latitude, Longitude
 	// Image URL
 	// scaledSize width, height
 	const markers = [
 		[
-			"Yoshi's House",
-			34.66669734177897,
-			135.4309054875526,
-			'yoshi_house.svg',
+			"Little message.",
+			45.519090,
+			-73.580629,
+			'yellow_glow.png',
 			38,
 			31,
 		],
 		[
-			'You Are Here',
-			34.66767112713121,
-			135.4297887322531,
-			'pointer.svg',
-			30,
-			47.8,
+			"We are here",
+			45.4971123,
+			-73.5809226,
+			'yellow_glow.png',
+			38,
+			31,
 		],
-		[
-			'Ghost House',
-			34.66832715150856,
-			135.43292762674864,
-			'ghosthouse.svg',
-			40,
-			48,
-		],
-		['Castle', 34.66775608022106, 135.43139547897843, 'castle.svg', 40, 53],
-		['Warp Pipe', 34.66739738878135, 135.43225049775214, 'pipe.svg', 38, 42.5],
-		['Star World', 34.667959023359266, 135.42866400953733, 'star.svg', 38, 38],
-		[
-			'Donut Plains',
-			34.66830355359945,
-			135.4320565322381,
-			'hill_with_eyes.svg',
-			50,
-			60.7,
-		],
-		[
-			'Donut Plains',
-			34.66829411443392,
-			135.43231361996433,
-			'hill_with_eyes.svg',
-			50,
-			60.7,
-		],
-		[
-			'Donut Plains',
-			34.6683781779677,
-			135.43217016043528,
-			'hill_with_eyes.svg',
-			50,
-			60.7,
-		],
+
+		45.4971123,-73.5809226
 	];
 
+	//https://developers.google.com/maps/documentation/javascript/markers#add
 	for (let i = 0; i < markers.length; i++) {
 		const currMarker = markers[i];
 
@@ -92,4 +65,6 @@ function initMap() {
 			infowindow.open(map, marker);
 		});
 	}
+
 }
+

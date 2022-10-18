@@ -3,21 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Super Mario World Google Map</title>
+  <title>Night lights Google Map</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   
-  <h1>Lets'a go to Super Mario World!!!</h1>
+  <h1>An All time glow</h1>
 
   <div id="map"></div>
 
   <script src="script.js"></script>
 
   <!-- Replace API_KEY and MAP_ID with your own ones -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQg_KuPiTq7X_Waevx6cdkJZWYsuVLacI&map_ids=ab95babd1faf9261	&callback=initMap">
-</script>
+  <!-- you can add &callback=initMap to the URL to call the map init function directly  -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXwd5M7sQzCX87fb0UrgEAUlEtVCT6ryg&map_ids=98029c9800398aac&callback=initMap">
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://unpkg.com/@loaders.gl/csv@3.0.12/dist/dist.min.js"></script>
+  <script src="https://unpkg.com/deck.gl@8.6.0-alpha.3/dist.min.js"></script>
 </body>
 </html>

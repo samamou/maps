@@ -1,4 +1,4 @@
-# Building a Super Mario themed Google map!
+# Night lihgts Google map!
 
 This project will show you how to build a custom styled Google map using the Google Cloud Platform and the Google Maps JavaScript API.
 
